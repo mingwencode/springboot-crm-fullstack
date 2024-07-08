@@ -1,6 +1,8 @@
 package com.crm.crm.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
 import lombok.Data;
 
 @Data
@@ -12,9 +14,7 @@ public class Contact {
   private String lastName;
   private String email;
 
-  private Contact() {
-
-  }
+  private Contact() {}
 
   public Contact(String firstName, String lastName, String email) {
     this.firstName = firstName;
